@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vexora Client – Download</title>
+<meta name="description" content="Vexora is a Minecraft client. Download the launcher, the portable version or the client mod.">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0719; --panel:#150f2e; --line:#2d2354; --text:#ece8fb; --muted:#a79fcb;
+  --violet:#8b5cf6; --violet-hi:#b69cff;
+  --display:'Pixelify Sans','Courier New',monospace;
+  --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--violet-hi);outline-offset:3px}
+.wrap{width:min(1040px,100% - 2.5rem);margin-inline:auto}
+
+header{padding:1.25rem 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font:700 1.15rem var(--display);text-decoration:none;letter-spacing:.02em}
+.brand img{width:34px;height:34px;border-radius:8px;image-rendering:pixelated}
+nav{display:flex;gap:1.5rem;font-weight:500;color:var(--muted)}
+nav a{text-decoration:none}
+nav a:hover{color:var(--text)}
+
+.hero{position:relative;overflow:hidden;padding:clamp(3rem,10vw,7rem) 0 clamp(3rem,8vw,5.5rem)}
+.hero-logo{position:absolute;right:0;top:50%;transform:translateY(-50%);width:min(440px,40vw);aspect-ratio:1;border-radius:20px;image-rendering:pixelated;box-shadow:0 0 90px #6d4cd155}
+@media (max-width:760px){.hero-logo{width:70vw;opacity:.18;right:-10vw}}
+.hero .wrap{position:relative}
+h1{font:700 clamp(3rem,11vw,8rem)/.92 var(--display);letter-spacing:.01em}
+.lead{max-width:34rem;margin-top:1.5rem;color:var(--muted);font-size:1.2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.25rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.5rem;border-radius:10px;font-weight:700;text-decoration:none;border:1px solid var(--line);transition:background .15s,border-color .15s}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:#fff}
+.btn.primary:hover{background:#9d74ff}
+.btn.ghost:hover{border-color:var(--violet-hi)}
+
+section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.6rem,3.8vw,2.4rem)/1.15 var(--display);margin-bottom:.6rem}
+.sub{color:var(--muted);max-width:36rem}
+
+.dl{margin-top:2rem;display:grid;gap:.75rem}
+.row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;padding:1.15rem 1.3rem;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.row.main{border-color:var(--violet)}
+.row h3{font:700 1.1rem var(--body)}
+.row p{color:var(--muted);font-size:.95rem}
+.row .meta{display:block;margin-top:.15rem;font-size:.85rem;color:var(--violet-hi)}
+@media (max-width:620px){.row{grid-template-columns:1fr}.row .btn{justify-content:center}}
+
+.steps{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+.steps h3{font:700 1.05rem var(--body);margin-bottom:.4rem;color:var(--violet-hi)}
+.steps ol{padding-left:1.2rem;color:var(--muted)}
+.steps li+li{margin-top:.25rem}
+
+.feat{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem}
+.feat h3{font:700 1.05rem var(--body);margin-bottom:.3rem}
+.feat p{color:var(--muted)}
+
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer .links{display:flex;flex-wrap:wrap;gap:1.25rem}
+footer a{text-decoration:none}
+footer a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Vexora home">
+      <img src="icon.png" alt="" width="34" height="34">
+      Vexora
+    </a>
+    <nav aria-label="Main">
+      <a href="#download">Download</a>
+      <a href="#install">Install</a>
+      <a href="#features">Features</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <img class="hero-logo" src="icon.png" alt="Vexora Client logo">
+      <h1>Vexora<br>Client</h1>
+      <p class="lead">A Minecraft client you can install in a minute. Grab the launcher, run the portable version, or add the client mod to the launcher you already use.</p>
+      <div class="cta">
+        <a class="btn primary" href="download/launcher/vexora-launcher-setup.exe" download>Download launcher</a>
+        <a class="btn ghost" href="#download">All downloads</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="download">
+    <div class="wrap">
+      <h2>Downloads</h2>
+      <p class="sub">The launcher is the easiest way to get started and keeps Vexora up to date.</p>
+      <div class="dl">
+        <div class="row main">
+          <div>
+            <h3>Launcher installer</h3>
+            <p>Installs Vexora on Windows.</p>
+            <span class="meta">vexora-launcher-setup.exe · 27.6 MB</span>
+          </div>
+          <a class="btn primary" href="download/launcher/vexora-launcher-setup.exe" download>Download</a>
+        </div>
+        <div class="row">
+          <div>
+            <h3>Portable launcher</h3>
+            <p>No installation. Unzip and run from any folder or USB stick.</p>
+            <span class="meta">vexora-portable.zip · 41.1 MB</span>
+          </div>
+          <a class="btn ghost" href="download/launcher/vexora-portable.zip" download>Download</a>
+        </div>
+        <div class="row">
+          <div>
+            <h3>Client mod</h3>
+            <p>Put it into the mods folder of Prism Launcher, Modrinth App, CurseForge, the Minecraft Launcher and others.</p>
+            <span class="meta">vexora.jar · 583 KB</span>
+          </div>
+          <a class="btn ghost" href="download/vexora.jar" download>Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="install">
+    <div class="wrap">
+      <h2>Install in three steps</h2>
+      <div class="steps">
+        <div>
+          <h3>Launcher</h3>
+          <ol>
+            <li>Download the installer.</li>
+            <li>Run vexora-launcher-setup.exe.</li>
+            <li>Open Vexora and press Play.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Portable</h3>
+          <ol>
+            <li>Download vexora-portable.zip.</li>
+            <li>Extract it to any folder.</li>
+            <li>Start the launcher inside.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Mod (.jar)</h3>
+          <ol>
+            <li>Download vexora.jar.</li>
+            <li>Open the mods folder of your instance in Prism Launcher, Modrinth App, CurseForge or the Minecraft Launcher.</li>
+            <li>Drop vexora.jar in and start the game.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>What you get</h2>
+      <div class="feat">
+        <div><h3>Fast to set up</h3><p>One installer, no manual file juggling.</p></div>
+        <div><h3>Three ways to run it</h3><p>Installer, portable ZIP, or as a mod in the launcher you already use.</p></div>
+        <div><h3>Community-driven</h3><p>Join the Discord to give feedback and follow updates.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vexora Client · by SteelByte</span>
+    <div class="links">
+      <a href="imprint.html">Imprint</a>
+      <a href="https://discord.com/invite/Y4sVPK5Z47" target="_blank" rel="noopener">Discord</a>
+      <a href="https://youtube.com/@steelbyt3" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://tiktok.com/@steelbyte_" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://modrinth.com/user/steelbyte_" target="_blank" rel="noopener">Modrinth</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

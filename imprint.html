@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imprint – Vexora Client</title>
+<meta name="robots" content="index,follow">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0719; --panel:#150f2e; --line:#2d2354; --text:#ece8fb; --muted:#a79fcb;
+  --violet:#8b5cf6; --violet-hi:#b69cff;
+  --display:'Pixelify Sans','Courier New',monospace;
+  --body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--violet-hi);outline-offset:3px}
+.wrap{width:min(1040px,100% - 2.5rem);margin-inline:auto}
+
+header{padding:1.25rem 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font:700 1.15rem var(--display);text-decoration:none;letter-spacing:.02em}
+.brand img{width:34px;height:34px;border-radius:8px;image-rendering:pixelated}
+nav{display:flex;gap:1.5rem;font-weight:500;color:var(--muted)}
+nav a{text-decoration:none}
+nav a:hover{color:var(--text)}
+
+.hero{position:relative;overflow:hidden;padding:clamp(3rem,10vw,7rem) 0 clamp(3rem,8vw,5.5rem)}
+.hero-logo{position:absolute;right:0;top:50%;transform:translateY(-50%);width:min(440px,40vw);aspect-ratio:1;border-radius:20px;image-rendering:pixelated;box-shadow:0 0 90px #6d4cd155}
+@media (max-width:760px){.hero-logo{width:70vw;opacity:.18;right:-10vw}}
+.hero .wrap{position:relative}
+h1{font:700 clamp(3rem,11vw,8rem)/.92 var(--display);letter-spacing:.01em}
+.lead{max-width:34rem;margin-top:1.5rem;color:var(--muted);font-size:1.2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.25rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.5rem;border-radius:10px;font-weight:700;text-decoration:none;border:1px solid var(--line);transition:background .15s,border-color .15s}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:#fff}
+.btn.primary:hover{background:#9d74ff}
+.btn.ghost:hover{border-color:var(--violet-hi)}
+
+section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.6rem,3.8vw,2.4rem)/1.15 var(--display);margin-bottom:.6rem}
+.sub{color:var(--muted);max-width:36rem}
+
+.dl{margin-top:2rem;display:grid;gap:.75rem}
+.row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;padding:1.15rem 1.3rem;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.row.main{border-color:var(--violet)}
+.row h3{font:700 1.1rem var(--body)}
+.row p{color:var(--muted);font-size:.95rem}
+.row .meta{display:block;margin-top:.15rem;font-size:.85rem;color:var(--violet-hi)}
+@media (max-width:620px){.row{grid-template-columns:1fr}.row .btn{justify-content:center}}
+
+.steps{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+.steps h3{font:700 1.05rem var(--body);margin-bottom:.4rem;color:var(--violet-hi)}
+.steps ol{padding-left:1.2rem;color:var(--muted)}
+.steps li+li{margin-top:.25rem}
+
+.feat{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem}
+.feat h3{font:700 1.05rem var(--body);margin-bottom:.3rem}
+.feat p{color:var(--muted)}
+
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer .links{display:flex;flex-wrap:wrap;gap:1.25rem}
+footer a{text-decoration:none}
+footer a:hover{color:var(--text)}
+
+.legal{padding:clamp(2rem,5vw,4rem) 0 clamp(3rem,7vw,5rem);max-width:44rem}
+.legal h1{font-size:clamp(2.2rem,6vw,3.6rem);margin-bottom:2rem}
+.legal h2{font-size:1.25rem;margin:2.5rem 0 .6rem;color:var(--violet-hi)}
+.legal h3{font:700 1.05rem var(--body);margin:1.6rem 0 .3rem}
+.legal p{color:var(--muted);margin-top:.5rem}
+.legal address{font-style:normal;color:var(--text);margin-top:.5rem}
+.legal a{color:var(--violet-hi)}
+.legal hr{border:0;border-top:1px solid var(--line);margin:2.5rem 0 0}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Vexora home">
+      <img src="icon.png" alt="" width="34" height="34">
+      Vexora
+    </a>
+    <nav aria-label="Main">
+      <a href="index.html#download">Download</a>
+      <a href="index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap legal">
+    <h1>Legal Notice (Imprint)</h1>
+
+    <h2>Information pursuant to Section 5 DDG</h2>
+    <p>German Digital Services Act (Digitale-Dienste-Gesetz)</p>
+    <address>
+      Linus Löffel<br>
+      Happurger Str. 24<br>
+      90482 Nuremberg<br>
+      Germany
+    </address>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:contact@steelbyte.eu">contact@steelbyte.eu</a></p>
+
+    <h2>Person responsible for content pursuant to Section 18 (2) MStV</h2>
+    <p>German Media Interstate Treaty (Medienstaatsvertrag)</p>
+    <address>
+      Linus Löffel<br>
+      Happurger Str. 24<br>
+      90482 Nuremberg<br>
+      Germany
+    </address>
+
+    <hr>
+
+    <h2>Disclaimer &amp; Terms of Use</h2>
+
+    <h3>1. Use of the Minecraft Client at Own Risk</h3>
+    <p>The software/Minecraft client is provided “as is” without warranty of any kind. The developer shall not be held liable for any damages to hardware or software, system instability, or loss of data resulting from the installation or use of this client.</p>
+
+    <h3>2. Exclusion of Liability for Misuse</h3>
+    <p>The developer/owner assumes no responsibility or liability for any improper, unauthorized, or illegal use of the client by third parties. This includes, but is not limited to, violations of third-party server rules, unauthorized modifications, or account bans resulting from the use of this software. Users are solely responsible for all actions taken and consequences arising from their use of the client.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vexora Client · by SteelByte</span>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="imprint.html">Imprint</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
